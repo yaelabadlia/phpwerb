@@ -12,7 +12,7 @@
 <body>
     <h1 class="text-primary">Page d'accueil</h1>
     <p>Bienvenue dans cette application <strong>PHP</strong></p>
-    <a href="utilisateur?username=Mitroglou&ville=Marseille">
+    <a href="utilisateur?username=Mitroglou&ville=Marseille&age=55">
         Connaître un peu plus sur la légende ?
     </a>
 
