@@ -1,16 +1,16 @@
 <?php
 $username = "Doe";
-if ($_GET['username'] != "") {
-    $username = $_GET['username'];
+if ($_POST['username'] != "") {
+    $username = $_POST['username'];
 }
 $civilite = "madame";
-if (isset($_GET['genre']) and $_GET['genre'] == 'homme') {
+if (isset($_POST['genre']) and $_POST['genre'] == 'homme') {
     $civilite = "monsieur";
 }
 
 
-$age = $_GET['age'];
-$ville = $_GET['ville'];
+$age = $_POST['age'];
+$ville = $_POST['ville'];
 ?>
 
 <!DOCTYPE html>
