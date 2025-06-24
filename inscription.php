@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <?php require    "./_dependencies.php" ?>
 
 </head>
 
 <body>
+    <?php require_once "./_menu.php" ?>
     <h1 class="text-primary text-center my-4">Page d'inscription</h1>
     <main class=container>
         <form action="utilisateur.php" method="post">
@@ -93,7 +94,7 @@
             </div>
             <div>
                 <button class="btn btn-primary">
-                    S'inscrire
+                    S'inscrire <i class="fa-solid fa-user"></i>
                 </button>
             </div>
             <!-- <div>
