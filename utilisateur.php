@@ -1,4 +1,6 @@
 <?php
+//demarer la sessions 
+
 $username = "Doe";
 if ($_REQUEST['username'] != "") {
     $username = $_REQUEST['username'];
@@ -11,6 +13,9 @@ if (isset($_REQUEST['genre']) and $_REQUEST['genre'] == 'homme') {
 
 $age = $_REQUEST['age'];
 $ville = $_REQUEST['ville'];
+
+//ajouter un coockies
+setcookie("nom", $username);
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +34,7 @@ $ville = $_REQUEST['ville'];
         <?php
         echo "$civilite $username, vous avez $age ans et êtes de $ville";
         ?>
+        <a href="test.php">consulter coockies</a>
     </p>
 </body>
 
